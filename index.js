@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://result:result@cluster0.ajwm45j.mongodb.net/', { 
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({ origin: 'http://localhost:3000' })); // Enable CORS for your frontend
+app.use(cors({ origin: 'https://ieltsidp.online' })); // Enable CORS for your frontend
 
 // API Routes
 app.post('/results', async (req, res) => {
